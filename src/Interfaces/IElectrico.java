@@ -1,4 +1,6 @@
-﻿public interface IElectrico {
+﻿package Interfaces;
+
+public interface IElectrico {
 
     public void atacarImpacTrueno();
 

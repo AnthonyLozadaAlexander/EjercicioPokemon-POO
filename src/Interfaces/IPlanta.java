@@ -1,4 +1,6 @@
-﻿public interface IPlanta {
+﻿package Interfaces;
+
+public interface IPlanta {
 
     public void atacarParalizar();
 
