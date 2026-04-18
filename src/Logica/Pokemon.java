@@ -1,4 +1,6 @@
-﻿public abstract class Pokemon {
+﻿package Logica;
+
+public abstract class Pokemon {
     private int num_pokedex;
     private String nombrePokemon;
     private double pesoPokemon;
