@@ -1,11 +1,15 @@
 ﻿package Logica;
 
 public abstract class Pokemon {
-    private int num_pokedex;
-    private String nombrePokemon;
-    private double pesoPokemon;
-    private String sexo;
-    private String temporadaQueAparece;
+    protected int num_pokedex;
+    protected String nombrePokemon;
+    protected double pesoPokemon;
+    protected String sexo;
+    protected String temporadaQueAparece;
+
+    public abstract void atacarPlacaje();
+    public abstract void atacarArañazo();
+    public abstract void atacarMordisco();
 
     public void setNum_pokedex(int num_pokedex){
         this.num_pokedex = num_pokedex;
@@ -47,8 +51,6 @@ public abstract class Pokemon {
         return temporadaQueAparece;
     }
 
-    public abstract void atacarPlacaje();
-    public abstract void atacarArañazo();
-    public abstract void atacarMordisco();
+
 
 }
