@@ -1,10 +1,11 @@
 ﻿package Logica.Pokemons;
 
 
+import Interfaces.IAgua;
 import Interfaces.IPlanta;
 import Logica.Pokemon;
 
-public class Squirtle extends Pokemon implements IPlanta {
+public class Squirtle extends Pokemon implements IAgua {
     @Override
     protected void atacarPlacaje() {
 
@@ -21,22 +22,22 @@ public class Squirtle extends Pokemon implements IPlanta {
     }
 
     @Override
-    public void atacarParalizar() {
+    public void atacarHidroBomba() {
 
     }
 
     @Override
-    public void atacarDrenaje() {
+    public void atacarPistolaAgua() {
 
     }
 
     @Override
-    public void atacaHojaAfilada() {
+    public void atacarBurbuja() {
 
     }
 
     @Override
-    public void atacarLatigoCepa() {
+    public void atacarHidropulso() {
 
     }
 }
