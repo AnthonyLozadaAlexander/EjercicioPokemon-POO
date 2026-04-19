@@ -53,6 +53,7 @@ public class Main {
 
         System.out.println("Bienvenido A PokeDex\n");
         while (!bandera) { // Mientras (bandera == false)
+            String opc;
             System.out.println("-----------------------------------------");
             System.out.println("                  MENU                   ");
             System.out.println("-----------------------------------------");
@@ -70,12 +71,30 @@ public class Main {
                     break;
                 case "2":
                     System.out.println("1. Bulbasur\n 2. Charmander \n 3. Pikachu\n 4. Squirtle");
+                     opc = input.nextLine();
+                    switch (opc){
+                        case "1":
+                            p[0].mostrarInfo(); p[0].mostrarAtaques();
+                            break;
+                        case "2":
+                            p[1].mostrarInfo(); p[1].mostrarAtaques();
+                            break;
+                        case "3":
+                            p[2].mostrarInfo(); p[2].mostrarAtaques();
+                            break;
+                        case "4":
+                            p[3].mostrarInfo(); p[3].mostrarAtaques();
+                            break;
+                        default:
+                            System.out.println("Volviendo Al Menu");
+                            break;
+                    }
                     break;
 
                 case "3":
                     Pokemon p1 = null;
                     System.out.println("1. Bulbasur\n 2. Charmander \n 3. Pikachu\n 4. Squirtle");
-                    String opc = input.nextLine();
+                     opc = input.nextLine();
                     switch (opc) {
 
                         case "1":
