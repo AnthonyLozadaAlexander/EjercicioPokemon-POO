@@ -43,4 +43,17 @@ public class Pikachu extends Pokemon implements IElectrico {
     public void atacarRayoCarga() {
         System.out.println(getNombrePokemon() + "!Ataque Carga Rayo Pulverizante¡");
     }
+
+    @Override
+    public void mostrarAtaques(){
+        System.out.println(getNombrePokemon() + "\n" +
+                "Puede Usar Los Siguientes Ataques: " + "\n");
+        System.out.println("1. Placaje" + "\n" +
+                "2. Arañazo" + "\n" +
+                "3. Mordisco" + "\n" +
+                "4. Paralizar" + "\n" +
+                "5. Drenaje" + "\n" +
+                "6. Hoja Afilada" + "\n" +
+                "7. Latigo Cepa\n");
+    }
 }
