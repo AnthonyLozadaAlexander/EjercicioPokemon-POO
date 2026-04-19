@@ -7,9 +7,9 @@ public abstract class Pokemon {
     protected String sexo;
     protected String temporadaQueAparece;
 
-    public abstract void atacarPlacaje();
-    public abstract void atacarArañazo();
-    public abstract void atacarMordisco();
+    protected abstract void atacarPlacaje();
+    protected abstract void atacarArañazo();
+    protected abstract void atacarMordisco();
 
     public void setNum_pokedex(int num_pokedex){
         this.num_pokedex = num_pokedex;
