@@ -56,6 +56,13 @@ public abstract class Pokemon {
         return temporadaQueAparece;
     }
 
-
+    public String mostrarInfo(){
+        return "Caracteristicas Del Pokemon\n" +
+                "Num-Pokedex: " + getNum_pokedex() + "\n" +
+                "Nombre: " + getNombrePokemon() + "\n" +
+                "Peso: " + getPesoPokemon() + " kg\n" +
+                "Sexo: " + getSexo() + "\n" +
+                "Temporada Que Aparece: " + getTemporadaQueAparece() + "\n\n";
+    }
 
 }
