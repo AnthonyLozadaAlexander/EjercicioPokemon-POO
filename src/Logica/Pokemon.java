@@ -16,7 +16,7 @@ public abstract class Pokemon {
     protected abstract void atacarArañazo();
     protected abstract void atacarMordisco();
 
-    /*public void setNum_pokedex(int num_pokedex){
+    public void setNum_pokedex(int num_pokedex){
         this.num_pokedex = num_pokedex;
     }
 
@@ -54,7 +54,7 @@ public abstract class Pokemon {
 
     public String getTemporadaQueAparece() {
         return temporadaQueAparece;
-    }*/
+    }
 
 
 
