@@ -5,9 +5,13 @@ import Logica.Pokemons.Charmander;
 import Logica.Pokemons.Pikachu;
 import Logica.Pokemons.Squirtle;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Pokemon[] p = new Pokemon[4];
+        Scanner input = new Scanner(System.in);
+        Pokemon[] p = new Pokemon[4]; boolean bandera = false; String op;
+
         Squirtle Squirtle = new Squirtle();
         Charmander Charmander = new Charmander();
         Pikachu Pikachu = new Pikachu();
@@ -38,7 +42,25 @@ public class Main {
         Bulbasur.setSexo("M");
         Bulbasur.setTemporadaQueAparece("Marzo");
 
-            mostrarInfoPokemons(p);
+            System.out.println("Bienvenido A PokeDex\n");
+            while(!bandera){ // bandera == true
+                System.out.println("-----------------------------------------");
+                System.out.println("                  MENU                   ");
+                System.out.println("-----------------------------------------");
+                System.out.println(" 1. Mostrar Informacion De Los Pokemons");
+                System.out.println(" 2. Escriba El Pokemon De Su Interes");
+                System.out.println(" 3. Salir");
+                System.out.println("-----------------------------------------");
+                System.out.print("-> "); op = input.nextLine();
+
+            }
+
+
+
+
+
+
+
     }
 
     public static void mostrarInfoPokemons(Pokemon[] p){
