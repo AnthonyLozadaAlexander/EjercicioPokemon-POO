@@ -103,8 +103,28 @@ public class Main {
         }
     }
 
-    public static void crearPokemon(Pokemon p){
+    public static Pokemon crearPokemon(Pokemon p){
+        Scanner input = new Scanner(System.in);
         System.out.println("Escriba el nombre del Pokemon");
+        System.out.print("-> "); String name = input.nextLine();
+        p.setNombrePokemon(name);
+        System.out.println("Escriba el Numero Pokedex del Pokemon");
+        System.out.print("-> "); int num_pokedex = input.nextInt();
+        p.setNum_pokedex(num_pokedex);
+        System.out.println("Escriba el peso del Pokemon");
+        System.out.println("-> "); double peso = input.nextDouble();
+        p.setPesoPokemon(peso);
+        input.nextLine();
+        System.out.println("Escriba el sexo del Pokemon");
+        System.out.print("-> "); String sexo = input.nextLine();
+        p.setSexo(sexo);
+        System.out.println("Escriba la temporada en la que aparece el Pokemon");
+        System.out.print("-> "); String temporada = input.nextLine();
+        p.setTemporadaQueAparece(temporada);
+        input.nextLine();
+
+        return p;
+
     }
 
 }
