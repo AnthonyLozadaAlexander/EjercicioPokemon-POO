@@ -15,6 +15,7 @@ public abstract class Pokemon {
     protected abstract void atacarPlacaje();
     protected abstract void atacarArañazo();
     protected abstract void atacarMordisco();
+    protected abstract void mostrarAtaques();
 
     public void setNum_pokedex(int num_pokedex){
         this.num_pokedex = num_pokedex;
@@ -64,5 +65,7 @@ public abstract class Pokemon {
                 "Sexo: " + getSexo() + "\n" +
                 "Temporada Que Aparece: " + getTemporadaQueAparece() + "\n\n";
     }
+
+
 
 }
