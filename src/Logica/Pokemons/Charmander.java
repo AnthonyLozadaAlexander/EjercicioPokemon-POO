@@ -1,4 +1,4 @@
-﻿package Logica.Pokemons;
+package Logica.Pokemons;
 
 import Interfaces.IFuego;
 import Logica.Pokemon;

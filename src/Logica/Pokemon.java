@@ -1,4 +1,4 @@
-﻿package Logica;
+package Logica;
 
 import Interfaces.IAgua;
 import Interfaces.IElectrico;

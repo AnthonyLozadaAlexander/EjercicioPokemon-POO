@@ -1,4 +1,4 @@
-﻿package Logica;
+package Logica;
 
 import Logica.Pokemons.Bulbasur;
 import Logica.Pokemons.Charmander;
@@ -38,6 +38,7 @@ public class Main {
         Bulbasur.setSexo("M");
         Bulbasur.setTemporadaQueAparece("Marzo");
 
+            mostrarInfoPokemons(p);
     }
 
     public static void mostrarInfoPokemons(Pokemon[] p){
@@ -46,7 +47,4 @@ public class Main {
         }
     }
 
-    public static void mostrarInfoPokemon(Pokemon p){
-        System.out.println(p.mostrarInfo());
-    }
 }
