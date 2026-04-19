@@ -38,4 +38,17 @@ public class Charmander extends Pokemon implements IFuego {
     public void atacarLanzaLlamas() {
         System.out.println(getNombrePokemon() + "!Ataque Lanza Llamas¡");
     }
+
+    @Override
+    public void mostrarAtaques(){
+        System.out.println(getNombrePokemon() + "\n" +
+                "Puede Usar Los Siguientes Ataques: " + "\n");
+        System.out.println("1. Placaje" + "\n" +
+                "2. Arañazo" + "\n" +
+                "3. Mordisco" + "\n" +
+                "4. Paralizar" + "\n" +
+                "5. Drenaje" + "\n" +
+                "6. Hoja Afilada" + "\n" +
+                "7. Latigo Cepa\n");
+    }
 }
