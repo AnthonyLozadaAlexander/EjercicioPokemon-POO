@@ -28,7 +28,15 @@ public class Main {
 
         Pikachu.setNum_pokedex(3);
         Pikachu.setNombrePokemon("Pikachu - T");
+        Pikachu.setPesoPokemon(9.0);
+        Pikachu.setSexo("M");
+        Pikachu.setTemporadaQueAparece("Marzo");
+
+        Bulbasur.setNum_pokedex(1);
         Bulbasur.setNombrePokemon("Bulbasur - T");
+        Bulbasur.setPesoPokemon(9.0);
+        Bulbasur.setSexo("M");
+        Bulbasur.setTemporadaQueAparece("Marzo");
 
     }
 
