@@ -10,13 +10,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Pokemon[] p = new Pokemon[4]; boolean bandera = false; String op;
+        Pokemon[] p = new Pokemon[4];
+        boolean bandera = false;
+        String op;
 
         Squirtle Squirtle = new Squirtle();
         Charmander Charmander = new Charmander();
         Pikachu Pikachu = new Pikachu();
         Bulbasur Bulbasur = new Bulbasur();
-        p[0] = Squirtle; p[1]  = Charmander; p[2] = Pikachu; p[3] = Bulbasur;
+        p[0] = Squirtle;
+        p[1] = Charmander;
+        p[2] = Pikachu;
+        p[3] = Bulbasur;
 
         // Squirtle
         Squirtle.setNum_pokedex(7);
@@ -47,82 +52,97 @@ public class Main {
         Bulbasur.setTemporadaQueAparece("Marzo");
 
         System.out.println("Bienvenido A PokeDex\n");
-            while(!bandera){ // Mientras (bandera == false)
-                System.out.println("-----------------------------------------");
-                System.out.println("                  MENU                   ");
-                System.out.println("-----------------------------------------");
-                System.out.println(" 1. Mostrar Informacion De Los Pokemons");
-                System.out.println(" 2. Ver Pokemon De Su Interes");
-                System.out.println(" 3. Crea tu Pokemon");
-                System.out.println(" 4. Salir");
-                System.out.println("-----------------------------------------");
-                System.out.print("-> "); op = input.nextLine();
+        while (!bandera) { // Mientras (bandera == false)
+            System.out.println("-----------------------------------------");
+            System.out.println("                  MENU                   ");
+            System.out.println("-----------------------------------------");
+            System.out.println(" 1. Mostrar Informacion De Los Pokemons");
+            System.out.println(" 2. Ver Pokemon De Su Interes");
+            System.out.println(" 3. Crea tu Pokemon");
+            System.out.println(" 4. Salir");
+            System.out.println("-----------------------------------------");
+            System.out.print("-> ");
+            op = input.nextLine();
 
-                switch(op){
-                    case "1":
-                        mostrarInfoPokemons(p);
-                        break;
-                    case "2":
-                        break;
+            switch (op) {
+                case "1":
+                    mostrarInfoPokemons(p);
+                    break;
+                case "2":
+                    System.out.println("1. Bulbasur\n 2. Charmander \n 3. Pikachu\n 4. Squirtle");
+                    break;
 
-                    case "3":
-                        System.out.println("1. Bulbasur\n 2. Charmander \n 3. Pikachu\n 4. Squirtle");
-                        String opc = input.nextLine();
-                        if(opc.equals("1")){
-                            crearPokemon(Bulbasur);
-                        }else if(opc.equals("2")){
-                            crearPokemon(Charmander);
-                        }
-                        else if (opc.equals("3")){
-                            crearPokemon(Pikachu);
-                        }
-                        else if (opc.equals("4")) {
-                            crearPokemon(Squirtle);
-                        }else{
-                            System.out.println("Regresando Al Menu");
-                        }
+                case "3":
+                    Pokemon p1 = null;
+                    System.out.println("1. Bulbasur\n 2. Charmander \n 3. Pikachu\n 4. Squirtle");
+                    String opc = input.nextLine();
+                    switch (opc) {
 
-                        break;
-                    case "4":
-                        bandera = true;
-                        break;
+                        case "1":
+                            p1 = new Bulbasur();
+                            break;
+                        case "2":
+                            p1 = new Charmander();
+                            break;
+                        case "3":
+                            p1 = new Pikachu();
+                            break;
+                        case "4":
+                            p1 = new Squirtle();
+                            break;
+                        default:
+                            System.out.println("Volviendo Al Menu");
+                            break;
 
-                    default:
-                        System.out.println("Opcion Incorrecta");
-                        break;
-                }
+                    }
 
+                    if (p1 != null) {
+                        p1 = crearPokemon(p1);
+                        System.out.println(p1.mostrarInfo());
+                    }
+                    break;
+                case "4":
+                    bandera = true;
+                    break;
+
+                default:
+                    System.out.println("Opcion Incorrecta");
+                    break;
             }
+
+        }
 
         System.out.println("Gracias Por Probar El Programa");
     }
 
-    public static void mostrarInfoPokemons(Pokemon[] p){
+    public static void mostrarInfoPokemons(Pokemon[] p) {
         for (int i = 0; i <= p.length - 1; i++) {
             System.out.println(p[i].mostrarInfo());
         }
     }
 
-    public static Pokemon crearPokemon(Pokemon p){
+    public static Pokemon crearPokemon(Pokemon p) {
         Scanner input = new Scanner(System.in);
         System.out.println("Escriba el nombre del Pokemon");
-        System.out.print("-> "); String name = input.nextLine();
+        System.out.print("-> ");
+        String name = input.nextLine();
         p.setNombrePokemon(name);
         System.out.println("Escriba el Numero Pokedex del Pokemon");
-        System.out.print("-> "); int num_pokedex = input.nextInt();
+        System.out.print("-> ");
+        int num_pokedex = Integer.parseInt(input.nextLine());
         p.setNum_pokedex(num_pokedex);
         System.out.println("Escriba el peso del Pokemon");
-        System.out.println("-> "); double peso = input.nextDouble();
+        System.out.println("-> ");
+        double peso = Double.parseDouble(input.nextLine());
         p.setPesoPokemon(peso);
-        input.nextLine();
         System.out.println("Escriba el sexo del Pokemon");
-        System.out.print("-> "); String sexo = input.nextLine();
+        System.out.print("-> ");
+        String sexo = input.nextLine();
         p.setSexo(sexo);
         System.out.println("Escriba la temporada en la que aparece el Pokemon");
-        System.out.print("-> "); String temporada = input.nextLine();
+        System.out.print("-> ");
+        String temporada = input.nextLine();
         p.setTemporadaQueAparece(temporada);
-        input.nextLine();
-
         return p;
 
     }
