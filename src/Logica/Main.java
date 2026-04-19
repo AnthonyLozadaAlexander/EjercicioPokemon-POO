@@ -43,7 +43,7 @@ public class Main {
         Bulbasur.setTemporadaQueAparece("Marzo");
 
             System.out.println("Bienvenido A PokeDex\n");
-            while(!bandera){ // bandera == true
+            while(!bandera){ // Mientras (bandera == false)
                 System.out.println("-----------------------------------------");
                 System.out.println("                  MENU                   ");
                 System.out.println("-----------------------------------------");
@@ -53,12 +53,21 @@ public class Main {
                 System.out.println("-----------------------------------------");
                 System.out.print("-> "); op = input.nextLine();
 
+                switch(op){
+                    case "1":
+                        mostrarInfoPokemons(p);
+                        break;
+                    case "2":
+                        break;
+
+                    case "3":
+                        bandera = true;
+                        break;
+                }
+
             }
 
-
-
-
-
+        System.out.println("Gracias Por Probar El Programa");
 
 
     }
