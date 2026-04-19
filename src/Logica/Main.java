@@ -18,31 +18,35 @@ public class Main {
         Bulbasur Bulbasur = new Bulbasur();
         p[0] = Squirtle; p[1]  = Charmander; p[2] = Pikachu; p[3] = Bulbasur;
 
+        // Squirtle
         Squirtle.setNum_pokedex(7);
         Squirtle.setNombrePokemon("Squirtle - T");
         Squirtle.setPesoPokemon(9.0);
         Squirtle.setSexo("M");
         Squirtle.setTemporadaQueAparece("Marzo");
 
+        // Charmander
         Charmander.setNum_pokedex(4);
         Charmander.setNombrePokemon("Charmander - T");
         Charmander.setPesoPokemon(9.0);
         Charmander.setSexo("M");
         Charmander.setTemporadaQueAparece("Abril");
 
+        // Pikachu
         Pikachu.setNum_pokedex(3);
         Pikachu.setNombrePokemon("Pikachu - T");
         Pikachu.setPesoPokemon(9.0);
         Pikachu.setSexo("M");
         Pikachu.setTemporadaQueAparece("Marzo");
 
+        // Bulbasur
         Bulbasur.setNum_pokedex(1);
         Bulbasur.setNombrePokemon("Bulbasur - T");
         Bulbasur.setPesoPokemon(9.0);
         Bulbasur.setSexo("M");
         Bulbasur.setTemporadaQueAparece("Marzo");
 
-            System.out.println("Bienvenido A PokeDex\n");
+        System.out.println("Bienvenido A PokeDex\n");
             while(!bandera){ // Mientras (bandera == false)
                 System.out.println("-----------------------------------------");
                 System.out.println("                  MENU                   ");
