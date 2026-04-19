@@ -6,6 +6,11 @@ import Interfaces.IPlanta;
 import Logica.Pokemon;
 
 public class Squirtle extends Pokemon implements IAgua {
+
+    public Squirtle(){ // Constructor para Squirtle
+
+    }
+
     @Override
     protected void atacarPlacaje() {
 
