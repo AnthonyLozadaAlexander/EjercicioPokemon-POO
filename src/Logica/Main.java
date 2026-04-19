@@ -31,4 +31,14 @@ public class Main {
         Bulbasur.setNombrePokemon("Bulbasur - T");
 
     }
+
+    public static void mostrarInfoPokemons(Pokemon[] p){
+        for (int i = 0; i <= p.length - 1; i++) {
+            System.out.println(p[i].mostrarInfo());
+        }
+    }
+
+    public static void mostrarInfoPokemon(Pokemon p){
+        System.out.println(p.mostrarInfo());
+    }
 }
