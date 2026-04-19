@@ -1,5 +1,10 @@
 ﻿package Logica;
 
+import Interfaces.IAgua;
+import Interfaces.IElectrico;
+import Interfaces.IFuego;
+import Interfaces.IPlanta;
+
 public abstract class Pokemon {
     protected int num_pokedex;
     protected String nombrePokemon;
