@@ -52,8 +52,9 @@ public class Main {
                 System.out.println("                  MENU                   ");
                 System.out.println("-----------------------------------------");
                 System.out.println(" 1. Mostrar Informacion De Los Pokemons");
-                System.out.println(" 2. Escriba El Pokemon De Su Interes");
-                System.out.println(" 3. Salir");
+                System.out.println(" 2. Ver Pokemon De Su Interes");
+                System.out.println(" 3. Crea tu Pokemon");
+                System.out.println(" 4. Salir");
                 System.out.println("-----------------------------------------");
                 System.out.print("-> "); op = input.nextLine();
 
@@ -65,21 +66,45 @@ public class Main {
                         break;
 
                     case "3":
+                        System.out.println("1. Bulbasur\n 2. Charmander \n 3. Pikachu\n 4. Squirtle");
+                        String opc = input.nextLine();
+                        if(opc.equals("1")){
+                            crearPokemon(Bulbasur);
+                        }else if(opc.equals("2")){
+                            crearPokemon(Charmander);
+                        }
+                        else if (opc.equals("3")){
+                            crearPokemon(Pikachu);
+                        }
+                        else if (opc.equals("4")) {
+                            crearPokemon(Squirtle);
+                        }else{
+                            System.out.println("Regresando Al Menu");
+                        }
+
+                        break;
+                    case "4":
                         bandera = true;
+                        break;
+
+                    default:
+                        System.out.println("Opcion Incorrecta");
                         break;
                 }
 
             }
 
         System.out.println("Gracias Por Probar El Programa");
-
-
     }
 
     public static void mostrarInfoPokemons(Pokemon[] p){
         for (int i = 0; i <= p.length - 1; i++) {
             System.out.println(p[i].mostrarInfo());
         }
+    }
+
+    public static void crearPokemon(Pokemon p){
+        System.out.println("Escriba el nombre del Pokemon");
     }
 
 }
