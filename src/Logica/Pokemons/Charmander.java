@@ -1,8 +1,9 @@
 ﻿package Logica.Pokemons;
 
+import Interfaces.IFuego;
 import Logica.Pokemon;
 
-public class Charmander extends Pokemon {
+public class Charmander extends Pokemon implements IFuego {
     @Override
     protected void atacarPlacaje() {
 
@@ -15,6 +16,21 @@ public class Charmander extends Pokemon {
 
     @Override
     protected void atacarMordisco() {
+
+    }
+
+    @Override
+    public void atacarPunioFuego() {
+
+    }
+
+    @Override
+    public void atacarAscuas() {
+
+    }
+
+    @Override
+    public void atacarLanzaLlamas() {
 
     }
 }
