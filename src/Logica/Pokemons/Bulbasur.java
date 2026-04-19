@@ -11,38 +11,38 @@ public class Bulbasur extends Pokemon implements IPlanta {
 
     @Override
     protected void atacarPlacaje() {
-        System.out.println("!Ataque Placaje¡");
+        System.out.println(getNombrePokemon() +" !Ataque Placaje¡");
     }
 
     @Override
     protected void atacarArañazo() {
-        System.out.println("!Ataque Arañazo¡");
+        System.out.println(getNombrePokemon() + "!Ataque Arañazo¡");
     }
 
     @Override
     protected void atacarMordisco() {
-        System.out.println("!Mordisco¡");
+        System.out.println(getNombrePokemon() + "!Mordisco¡");
     }
 
     @Override
     public void atacarParalizar() {
-        System.out.println("!Ataque Paralizar¡");
+        System.out.println(getNombrePokemon() + "!Ataque Paralizar¡");
     }
 
     @Override
     public void atacarDrenaje() {
-        System.out.println("!Ataque Drenaje¡");
+        System.out.println(getNombrePokemon() + "!Ataque Drenaje¡");
     }
 
     @Override
     public void atacaHojaAfilada() {
-        System.out.println("!Ataque Hoja Afilada¡");
+        System.out.println(getNombrePokemon() + "!Ataque Hoja Afilada¡");
     }
 
     @Override
     public void atacarLatigoCepa() {
 
-        System.out.println("!Ataque Latigo Cepa¡");
+        System.out.println(getNombrePokemon() + "!Ataque Latigo Cepa¡");
 
     }
 }
