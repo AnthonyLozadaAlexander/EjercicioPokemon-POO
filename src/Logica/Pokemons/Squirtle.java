@@ -12,38 +12,38 @@ public class Squirtle extends Pokemon implements IAgua {
     }
 
     @Override
-    protected void atacarPlacaje() {
-        System.out.println("!Ataque Placaje¡");
+    public void atacarPlacaje() {
+        System.out.println(getNombrePokemon()+"!Ataque Placaje¡");
     }
 
     @Override
-    protected void atacarArañazo() {
-        System.out.println("!Ataque Arañazo¡");
+    public void atacarArañazo() {
+        System.out.println(getNombrePokemon() + "!Ataque Arañazo¡");
     }
 
     @Override
-    protected void atacarMordisco() {
-        System.out.println("!Mordisco¡");
+    public void atacarMordisco() {
+        System.out.println(getNombrePokemon() + "!Mordisco¡");
 
     }
 
     @Override
     public void atacarHidroBomba() {
-        System.out.println("!Daño HidroBomba");
+        System.out.println(getNombrePokemon() + "!Daño HidroBomba");
     }
 
     @Override
     public void atacarPistolaAgua() {
-        System.out.println("Ataque Pistola Agua¡");
+        System.out.println(getNombrePokemon() + "!Ataque Pistola Agua¡");
     }
 
     @Override
     public void atacarBurbuja() {
-        System.out.println("!Impacto Burbuja");
+        System.out.println(getNombrePokemon() + "!Impacto Burbuja");
     }
 
     @Override
     public void atacarHidropulso() {
-        System.out.println("Daño Hidropulso!");
+        System.out.println(getNombrePokemon() + "!Daño Hidropulso!");
     }
 }

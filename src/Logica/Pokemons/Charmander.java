@@ -11,31 +11,31 @@ public class Charmander extends Pokemon implements IFuego {
 
     @Override
     protected void atacarPlacaje() {
-        System.out.println("!Ataque Placaje¡");
+        System.out.println( getNombrePokemon()+"!Ataque Placaje¡");
     }
 
     @Override
     protected void atacarArañazo() {
-        System.out.println("!Ataque Arañazo¡");
+        System.out.println(getNombrePokemon() + "!Ataque Arañazo¡");
     }
 
     @Override
     protected void atacarMordisco() {
-        System.out.println("!Mordisco¡");
+        System.out.println(getNombrePokemon() + "!Mordisco¡");
     }
 
     @Override
     public void atacarPunioFuego() {
-        System.out.println("!Punio Fuego¡");
+        System.out.println(getNombrePokemon() + "!Punio Fuego¡");
     }
 
     @Override
     public void atacarAscuas() {
-        System.out.println("!Ataque Ascuas¡");
+        System.out.println(getNombrePokemon() + "!Ataque Ascuas¡");
     }
 
     @Override
     public void atacarLanzaLlamas() {
-        System.out.println("!Ataque Lanza Llamas¡");
+        System.out.println(getNombrePokemon() + "!Ataque Lanza Llamas¡");
     }
 }
